@@ -58,6 +58,17 @@ nav {
     left: 100%;
 }
 
+nav ul {
+    width: 40vw;
+    border: 2px solid;
+    margin: 0 auto;
+}
+
+nav ul li {
+    list-style-type: none;
+    text-align: center;
+}
+
 h1 {
     font-size: 80px;
 }
