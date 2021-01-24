@@ -1,29 +1,18 @@
 * {
-    /* primary */
-    /* color: #ff9960; */
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #e26a6a;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    color: #009975;
 
 }
 
-/* #e26a6a  chill √ */
-/* HEX: #f64747 accent only, hover/focus*/
-/* #e76e3c  soft orange #404040 over for text*/
-
-/* HEX: #d252b2 tertiary accent */
-
-/* HEX: #d25299  good #ffffff text over it */
-/* HEX: #db0a5b dark accent */
+/* COLORS */
+/* primary: #009975 */
+/* gray-scale: #4d4d4d */
 
 
-/* light colors */
+/* accent: #ff7373 */
 
-/* #e26a6a */
-/* #e26a6a */
-
-/* dark colors */
-
-/* #e26a6a deep rose */
+/* light: #BFFFFF */
+/* light-gray: #dfdfdf */
 
 body {
     box-sizing: border-box;
@@ -33,6 +22,12 @@ body {
 header {
     height: 6vmax;
     max-height: 60px;
+}
+
+.test-section {
+    height: 80vh;
+    background: #BFFFFF;
+    margin-top: 20vh;
 }
 
 .burger-btn {
@@ -54,7 +49,7 @@ header {
     height: .65vmax;
     max-height: 6px;
     background: #ff9960;
-    background: #e26a6a;
+    background: #00b287;
     border-radius: 2px;
 }
 
@@ -62,13 +57,10 @@ header {
     width: 3vmax;
 }
 
-/* .burger-btn:first-child {
-    background: #ff6060; 
-} */
-
 nav {
-    background: #fffffff0;
     background: #e26a6a;
+    background: #00b287;
+    background: #ff7373;
     position: fixed;
     top: 6vmax;
     left: 0;
@@ -96,8 +88,6 @@ nav ul li {
     letter-spacing: .5vmax;
     text-indent: .5vmax;
     width: 100%;
-    /* background: #40a0a0; */
-    border-radius: 30px 5px 30px 5px;
 }
 
 nav ul li a {
@@ -105,11 +95,7 @@ nav ul li a {
     text-decoration: none;
     color: inherit;
     color: #ffffff;
-    /* color: #404040; */
-
-    /* color: #40a0a0; */
-
-    /* text-shadow: 0 0 1px #202020; */
+    color: #4d4d4d;
 }
 
 nav ul li a:hover {
@@ -121,19 +107,14 @@ h1 {
     font-size: 80px;
     z-index: 102;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    /* color: #40a0a0; */
-
 }
 
-h2{
-    /* base color */
-    background: #ffc19f;
-    padding: 30px;
-    /* accent color */
-    border: 2px solid #ffae26;
-    /* border: 2px solid #ff6060; */
-}
 
-h2:hover {
-    background: #ff9960;
+.test-section p {
+    padding: 5vmax;
+    color: #ffffff;
+    color: #4d4d4d;
+    color: #009975;
+    
+    font-size: 3vmax;
 }
