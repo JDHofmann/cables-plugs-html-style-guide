@@ -1,7 +1,29 @@
 * {
     /* primary */
-    color: #ff9960;
+    /* color: #ff9960; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #e26a6a;
+
 }
+
+/* #e26a6a  chill √ */
+/* HEX: #f64747 accent only, hover/focus*/
+/* #e76e3c  soft orange #404040 over for text*/
+
+/* HEX: #d252b2 tertiary accent */
+
+/* HEX: #d25299  good #ffffff text over it */
+/* HEX: #db0a5b dark accent */
+
+
+/* light colors */
+
+/* #e26a6a */
+/* #e26a6a */
+
+/* dark colors */
+
+/* #e26a6a deep rose */
 
 body {
     box-sizing: border-box;
@@ -9,7 +31,6 @@ body {
 }
 
 header {
-    border: 1px solid #ff9960;
     height: 6vmax;
     max-height: 60px;
 }
@@ -33,6 +54,7 @@ header {
     height: .65vmax;
     max-height: 6px;
     background: #ff9960;
+    background: #e26a6a;
     border-radius: 2px;
 }
 
@@ -45,8 +67,8 @@ header {
 } */
 
 nav {
-    background: #ffffffe0;
-    /* background: #ff6060; */
+    background: #fffffff0;
+    background: #e26a6a;
     position: fixed;
     top: 6vmax;
     left: 0;
@@ -83,7 +105,9 @@ nav ul li a {
     text-decoration: none;
     color: inherit;
     color: #ffffff;
-    color: #40a0a0;
+    /* color: #404040; */
+
+    /* color: #40a0a0; */
 
     /* text-shadow: 0 0 1px #202020; */
 }
@@ -96,7 +120,8 @@ nav ul li a:hover {
 h1 {
     font-size: 80px;
     z-index: 102;
-    color: #40a0a0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* color: #40a0a0; */
 
 }
 
