@@ -64,8 +64,6 @@ header {
 
 nav {
     background: #ff7373;
-    /* background: linear-gradient(135deg, #ff8c89, #ffa49f );
-    box-shadow: inset 0 0 20px 8px #ff737360; */
     background: #ffffff;
     position: fixed;
     top: 6vmax;
@@ -105,7 +103,6 @@ nav ul li a {
 
 nav ul li a:hover {
     text-decoration: underline;
-    /* color: #ff6060; */
 }
 
 h1 {
