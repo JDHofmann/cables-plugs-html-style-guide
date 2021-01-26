@@ -128,3 +128,15 @@ h1 {
     color: #4d4d4d;
     font-size: 3vmax;
 }
+
+.scrolling-links-container {
+    height: 40vh;
+    width: 100%;
+    background: #4d4d4d;
+    overflow-y: hidden;
+}
+
+.link {
+    height: 40vh;
+    width: 100%;
+}
