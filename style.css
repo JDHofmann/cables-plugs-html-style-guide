@@ -187,3 +187,8 @@ td, th {
     padding: 2%;
     justify-self: left;
 }
+
+footer {
+    margin: 10vh 0;
+    height: 10vmin;
+}
