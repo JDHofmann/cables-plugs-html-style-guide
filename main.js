@@ -14,7 +14,7 @@ const scrollLinks = ( i=0 ) => {
     if(i === links.length ) i = 0;
     links[i].classList.add("in-view")
     i+=1;
-    setTimeout(() => scrollLinks(i), 5000)
+    setTimeout(() => scrollLinks(i), 3000)
 }
 
 scrollLinks()
