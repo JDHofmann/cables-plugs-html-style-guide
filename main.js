@@ -8,12 +8,16 @@ burgerBtn.addEventListener( "click", () => {
     nav.classList.remove("nav-hidden")
 } )
 
+let linkOne = document.getElementById("1")
+
+linkOne.addEventListener( "click", () => {
+    console.log("clicked One")
+} )
 const scrollLinks = ( i=0 ) => {
-    let cont = document.querySelector(".scrolling-links-container")
     let links = document.querySelectorAll(".link")
-    links.forEach( lx => lx.style.display = "none" )
+    links.forEach( lx => lx.classList.remove("in-view"))
     if(i === links.length ) i = 0;
-    links[i].style.display = "block"
+    links[i].classList.add("in-view")
     i+=1;
     setTimeout(() => scrollLinks(i), 5000)
 }

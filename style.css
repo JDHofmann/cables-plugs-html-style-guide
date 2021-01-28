@@ -147,9 +147,17 @@ h1 {
 .link {
     height: 40vh;
     width: 100%;
-    display: none;
+    position: absolute;
+    opacity: 0;
     font-size: 10vh;
-    transition: .5s;
+    transition: .6s;
+    z-index: 100;
+
+}
+
+.in-view {
+    z-index: 200;
+    opacity: 1;
 }
 
 .cart-container {
