@@ -16,12 +16,17 @@
 body {
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
     overflow-x: hidden;
 }
 
 header {
     height: 6vmax;
     max-height: 60px;
+}
+
+.app {
+    min-height: calc(100vh - 18vmax)
 }
 
 .test-section {
@@ -136,7 +141,7 @@ h1 {
     height: 40vh;
     width: 100%;
     background: #dfdfdf;
-    overflow-y: scroll;
+    overflow-y: hidden;
 }
 
 .link {
@@ -198,7 +203,7 @@ td, th {
 }
 
 footer {
-    margin: 10vh 0 0;
+    /* margin: 10vh 0 0; */
     height: 12vmax;
     background: #009975;
     display: flex;
