@@ -147,6 +147,9 @@ h1 {
 .link {
     height: 40vh;
     width: 100%;
+    display: none;
+    font-size: 10vh;
+    transition: .5s;
 }
 
 .cart-container {

@@ -1,4 +1,4 @@
-console.log("loaded js")
+// console.log("loaded js")
 
 let burgerBtn = document.querySelector(".burger-btn")
 
@@ -8,15 +8,14 @@ burgerBtn.addEventListener( "click", () => {
     nav.classList.remove("nav-hidden")
 } )
 
-// function scrollIt(){
-//     console.log("scrolling")
-//     let item2 = document.getElementById("2")
-//     item2.scrollIntoView()
-// }
+const scrollLinks = ( i=0 ) => {
+    let cont = document.querySelector(".scrolling-links-container")
+    let links = document.querySelectorAll(".link")
+    links.forEach( lx => lx.style.display = "none" )
+    if(i === links.length ) i = 0;
+    links[i].style.display = "block"
+    i+=1;
+    setTimeout(() => scrollLinks(i), 5000)
+}
 
-// setTimeout( scrollIt, 2000 )
-// tasks
-// √ build nav bar
-// √ build burger menu 
-// build header link carousel
-// 
+scrollLinks()
