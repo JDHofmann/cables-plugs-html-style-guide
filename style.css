@@ -26,7 +26,7 @@ header {
 }
 
 .app {
-    min-height: calc(100vh - 18vmax)
+    min-height: calc(100vh - 16vmax)
 }
 
 .test-section {
@@ -204,7 +204,7 @@ td, th {
 
 footer {
     /* margin: 10vh 0 0; */
-    height: 12vmax;
+    height: 8vmax;
     background: #009975;
     display: flex;
     justify-content: center;
