@@ -136,7 +136,7 @@ h1 {
 }
 
 .scrolling-links-container {
-    height: 45vh;
+    height: 35vmax;
     width: 100%;
     /* background: #dfdfdf; */
     overflow-y: hidden;
@@ -144,7 +144,7 @@ h1 {
 }
 
 .link {
-    height: 45vh;
+    height: 35vmax;
     width: 100%;
     position: absolute;
     opacity: 0;
@@ -156,7 +156,7 @@ h1 {
 }
 
 .link-background {
-    height: 40vh;
+    height: 30vmax;
     width: 100%;
     filter: grayscale(1.0);
     background-position: center;
@@ -165,13 +165,13 @@ h1 {
 }
 
 .link p {
-    height: 5vh;
+    height: 5vmax;
     background: #BFFFFF;
     /* background: #ffa49f; */
     color: #009975;
     /* color: #4d4d4d; */
-    font-size: 3.5vh;
-    padding: 1.25vh 10vmin;
+    font-size: 3.5vmax;
+    padding: 1.25vmax 10vw;
     text-align: right;
 }
 
