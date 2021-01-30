@@ -61,6 +61,7 @@ header {
     max-height: 5px;
     background: #009975;
     border-radius: 2px;
+    transition: .65s;
 }
 
 .burger-btn span:nth-child(2) {
@@ -78,7 +79,7 @@ header {
 
 .burger-btn-active span:nth-child(3){
     transform: rotate(-0.125turn);
-    margin-top: -.65vmax;
+    margin-top: -.5vmax;
 }
 
 nav {
@@ -90,6 +91,7 @@ nav {
     width: 100%;
     height: calc(100% - 6vmax);
     transition: 1s;
+    z-index: 500;
 }
 
 .nav-hidden {
