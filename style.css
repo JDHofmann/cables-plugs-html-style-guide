@@ -49,18 +49,36 @@ header {
     justify-content: space-between;
 }
 
+.burger-btn-active {
+    display: block;
+}
+
 .burger-btn span {
     display: block;
     width: 4vmax;
     max-width: 40px;
     height: .65vmax;
-    max-height: 6px;
+    max-height: 5px;
     background: #009975;
     border-radius: 2px;
 }
 
-.burger-btn .second-span {
+.burger-btn span:nth-child(2) {
     width: 3vmax;
+    max-width: 27px;
+}
+
+.burger-btn-active span:nth-child(1){
+    transform: rotate(0.125turn);
+}
+
+.burger-btn-active span:nth-child(2) {
+    display: none;
+}
+
+.burger-btn-active span:nth-child(3){
+    transform: rotate(-0.125turn);
+    margin-top: -.65vmax;
 }
 
 nav {

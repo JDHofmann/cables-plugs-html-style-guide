@@ -6,6 +6,8 @@ let nav = document.querySelector("nav")
 
 burgerBtn.addEventListener( "click", () => {
     nav.classList.remove("nav-hidden")
+    burgerBtn.classList.add("burger-btn-active")
+
 } )
 
 const scrollLinks = ( i=0 ) => {
