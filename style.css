@@ -3,13 +3,12 @@
 }
 
 /* COLORS */
-/* primary: #009975 */
-/* gray-scale: #4d4d4d */
-
-/* accent: #ff7373 */
-
-/* light: #BFFFFF */
 /* light-gray: #dfdfdf */
+/* dark: #4d4d4d */
+
+/* primary: #009975 */
+/* secondary: #ff5b53 */
+/* tertiary: #007199 */
 
 body {
     box-sizing: border-box;
@@ -24,17 +23,65 @@ header {
 }
 
 .app {
-    min-height: calc(100vh - 16vmax)
+    min-height: calc(100vh - 16vmax);
+    display: grid;
+    justify-content: center;
+    grid-gap: 4vmax;
+    margin: 4vmax auto;
+    width: calc(100vw - 4vmax);
+    max-width: 800px;
 }
 
 .test-section {
     background: #BFFFFF;
 }
 
+.test-grid {
+    display: grid;
+    height: calc(100vw - 4vmax);
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    box-shadow: 3px 3px 5px #4d4d4d60;
+    border-radius: 10px;
+}
+.sub-section {
+    grid-row: 1/3;
+    grid-column: 1/2;
+    margin: 4vmax;
+    background: #ffffff;
+    border-radius: 50%;
+    width: calc(100% - 8vmax);
+    height: calc(100% - 8vmax);
+    border: 1px solid #4d4d4d80;
+    box-shadow: 0 0 9px #4d4d4d40;
+}
 .test-section-two {
-    height: 30vh;
-    background: #ffa49f;
-    margin-top: 20vh;
+    grid-row: 2/4;
+    grid-column: 1/3;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    background: linear-gradient(135deg, #00997540 20%, #00997580);
+    -webkit-box-shadow: inset 0 0 25px 9px #00997580;
+    box-shadow: inset 0 0 25px 9px #00997580;
+    /* border: 1px solid #4d4d4d80; */
+
+}
+
+.test-section-three {
+    height: calc(100vw - 4vmax);
+    width: 100%;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #00719940 20%, #00719980);
+    -webkit-box-shadow: inset 0 0 25px 9px #00719980;
+    box-shadow: inset 0 0 25px 9px #00719980;
+}
+
+
+.test-section-two p, .test-section-three p {
+    padding: 5vmax;
+    color: #4d4d4d;
+    font-size: 5vmin;
+    margin: 0 auto;
 }
 
 .burger-btn {
@@ -83,7 +130,6 @@ header {
 }
 
 nav {
-    background: #ff7373;
     background: #ffffff;
     position: fixed;
     top: 8vmax;
@@ -129,43 +175,28 @@ nav ul li a:hover {
 h1 {
     font-size: 15vmin;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    padding: 4vmax 2vmax;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 800px;
+    background: linear-gradient( #009975 , #00997580);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
 }
 
 .cart-title {
     font-size: 10vmin;
 }
 
-.test-section p {
-    padding: 5vmax 0;
-    text-align: center;
-    color: #009975;
-    font-size: 3vmin;
-}
-
-.test-section-two p {
-    padding: 5vmax;
-    color: #4d4d4d;
-    font-size: 3vmin;
-    width: 100vw;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
 .scrolling-links-container {
-    height: 35vmax;
-    width: 100%;
-    /* background: #dfdfdf; */
+    /* height is 40vmax ( .link-background height + .link-title height ) */
+    height: 40vmax;
+    width: calc(100vw - 4vmax);
     overflow-y: hidden;
-    margin-bottom: 10vh;
+    box-shadow: 4px 4px 5px #4d4d4d60;
+    border-radius: 10px;
 }
 
 .link {
-    height: 35vmax;
-    width: 100%;
+    height: auto;
+    width: inherit;
     position: absolute;
     opacity: 0;
     transition: 1s;
@@ -178,21 +209,32 @@ h1 {
 .link-background {
     height: 30vmax;
     width: 100%;
+    border-radius: 10px 10px 0 0;
     filter: grayscale(1.0);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    box-shadow: inset 0 -4px  5px -5px #4d4d4d60;
+
+
 }
 
 .link p {
-    height: 5vmax;
+    height: 10vmax;
     background: #BFFFFF;
-    /* background: #ffa49f; */
-    color: #009975;
-    /* color: #4d4d4d; */
+    background: linear-gradient(135deg, #ff5b5340, #ff5b5380);
+    -webkit-box-shadow: inset 0 0 25px 9px #ffa49f70;
+    box-shadow: inset 0 0 25px 9px #ffa49f70;
+    color: #4d4d4d;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     font-size: 3.5vmax;
-    padding: 1.25vmax 10vw;
+    padding: 0 10vw;
     text-align: right;
+    width: calc(80vw - 4vmax);
+    margin: 0;
+    border-radius: 0 0 10px 10px;
 }
 
 .in-view {
@@ -268,6 +310,9 @@ td, th {
 footer {
     height: 8vmax;
     background: #009975;
+    background: linear-gradient(135deg, #00997580 20%, #009975c0);
+    -webkit-box-shadow: inset 0 0 25px 9px #00997550;
+    box-shadow: inset 0 0 25px 9px #00997550;
     display: flex;
     justify-content: center;
     align-items: center;
