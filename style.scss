@@ -320,8 +320,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 1px solid;
-    background: #ffffff;
+    // border-top: 1px solid;
+    @include depthBackground($mint-1);
 }
 
 footer span {
