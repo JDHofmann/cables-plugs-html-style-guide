@@ -26,8 +26,8 @@ header {
     min-height: calc(100vh - 16vmax);
     display: grid;
     justify-content: center;
-    grid-gap: 4vmax;
-    margin: 4vmax auto;
+    grid-gap: 6vmax;
+    margin: 6vmax auto;
     width: calc(100vw - 4vmax);
     max-width: 800px;
 }
