@@ -81,21 +81,21 @@ header {
 }
 
 .three-bottom {
-  background: linear-gradient(135deg, rgba(255, 177, 83, 0.25) 20%, rgba(255, 177, 83, 0.5));
-  -webkit-box-shadow: inset 0 0 25px 9px rgba(255, 177, 83, 0.5);
-          box-shadow: inset 0 0 25px 9px rgba(255, 177, 83, 0.5);
-}
-
-.four-bottom {
   background: linear-gradient(135deg, rgba(255, 83, 161, 0.25) 20%, rgba(255, 83, 161, 0.5));
   -webkit-box-shadow: inset 0 0 25px 9px rgba(255, 83, 161, 0.5);
           box-shadow: inset 0 0 25px 9px rgba(255, 83, 161, 0.5);
 }
 
+.four-bottom {
+  background: linear-gradient(135deg, rgba(0, 211, 115, 0.25) 20%, rgba(0, 211, 115, 0.5));
+  -webkit-box-shadow: inset 0 0 25px 9px rgba(0, 211, 115, 0.5);
+          box-shadow: inset 0 0 25px 9px rgba(0, 211, 115, 0.5);
+}
+
 .five-bottom {
-  background: linear-gradient(135deg, rgba(83, 161, 255, 0.25) 20%, rgba(83, 161, 255, 0.5));
-  -webkit-box-shadow: inset 0 0 25px 9px rgba(83, 161, 255, 0.5);
-          box-shadow: inset 0 0 25px 9px rgba(83, 161, 255, 0.5);
+  background: linear-gradient(135deg, rgba(255, 154, 32, 0.25) 20%, rgba(255, 154, 32, 0.5));
+  -webkit-box-shadow: inset 0 0 25px 9px rgba(255, 154, 32, 0.5);
+          box-shadow: inset 0 0 25px 9px rgba(255, 154, 32, 0.5);
 }
 
 .six-bottom {
@@ -108,8 +108,7 @@ h1 {
   font-size: 40px;
   letter-spacing: -2px;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 153, 117, 0.5)), to(#009975));
-  background: linear-gradient(rgba(0, 153, 117, 0.5), #009975);
+  background: #009975;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 0;
@@ -124,6 +123,30 @@ h1 {
   -webkit-box-shadow: 4px 4px 5px #4d4d4d60;
           box-shadow: 4px 4px 5px #4d4d4d60;
   border-radius: 10px;
+}
+
+.scrolling-links-container .link:nth-child(1) p {
+  background: linear-gradient(135deg, rgba(255, 83, 161, 0.25) 20%, rgba(255, 83, 161, 0.5));
+  -webkit-box-shadow: inset 0 0 25px 9px rgba(255, 83, 161, 0.5);
+          box-shadow: inset 0 0 25px 9px rgba(255, 83, 161, 0.5);
+}
+
+.scrolling-links-container .link:nth-child(2) p {
+  background: linear-gradient(135deg, rgba(0, 211, 115, 0.25) 20%, rgba(0, 211, 115, 0.5));
+  -webkit-box-shadow: inset 0 0 25px 9px rgba(0, 211, 115, 0.5);
+          box-shadow: inset 0 0 25px 9px rgba(0, 211, 115, 0.5);
+}
+
+.scrolling-links-container .link:nth-child(3) p {
+  background: linear-gradient(135deg, rgba(255, 154, 32, 0.25) 20%, rgba(255, 154, 32, 0.5));
+  -webkit-box-shadow: inset 0 0 25px 9px rgba(255, 154, 32, 0.5);
+          box-shadow: inset 0 0 25px 9px rgba(255, 154, 32, 0.5);
+}
+
+.scrolling-links-container .link:nth-child(4) p {
+  background: linear-gradient(135deg, rgba(255, 98, 32, 0.25) 20%, rgba(255, 98, 32, 0.5));
+  -webkit-box-shadow: inset 0 0 25px 9px rgba(255, 98, 32, 0.5);
+          box-shadow: inset 0 0 25px 9px rgba(255, 98, 32, 0.5);
 }
 
 .link {
@@ -154,10 +177,6 @@ h1 {
 
 .link p {
   height: 10vmax;
-  background: linear-gradient(135deg, #ff5b5340, #ff5b5380);
-  -webkit-box-shadow: inset 0 0 25px 9px #ff5b5330;
-  box-shadow: inset 0 0 25px 9px #ff5b5330;
-  color: #4d4d4d;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
