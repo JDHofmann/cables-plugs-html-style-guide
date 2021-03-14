@@ -3,11 +3,19 @@
 /* light-gray: #dfdfdf */
 /* dark: #4d4d4d */
 $dark: #4d4d4d;
-
+$green: #009975;
+$gold: #ffb153;
+$blue: #53a1ff;
+$rose: #ff53a1;
 /* primary: #009975 */
 /* secondary: #ff5b53 */
 /* tertiary: #007199 */
 /* #FFB153 -gold */
+
+@mixin depthBackground($base){
+    background: linear-gradient(135deg, rgba($base, .25) 20%, rgba($base, .5));
+    box-shadow: inset 0 0 25px 9px rgba($base, .5);
+}
 * {
     color: $dark;
 }
@@ -69,36 +77,33 @@ header {
 }
 
 .three-bottom {
-    background: linear-gradient(135deg, #FFB15360 20%, #FFB153a0);
-    box-shadow: inset 0 0 25px 9px #FFB15350;
-    background: linear-gradient(135deg, #ff9a2040 20%, #ff9a2080);
-    box-shadow: inset 0 0 25px 9px #ff9a2030;
-    background: linear-gradient(135deg, #ff8e0640 20%, #ff8e0680);
-    box-shadow: inset 0 0 25px 9px #ff8e0680;
+    @include depthBackground($gold);
+    // background: linear-gradient(135deg, #FFB15360 20%, #FFB153a0);
+    // box-shadow: inset 0 0 25px 9px #FFB15350;
+    // background: linear-gradient(135deg, #ff9a2040 20%, #ff9a2080);
+    // box-shadow: inset 0 0 25px 9px #ff9a2030;
+    // background: linear-gradient(135deg, #ff8e0640 20%, #ff8e0680);
+    // box-shadow: inset 0 0 25px 9px #ff8e0680;
 }
 
 .four-bottom {
-    background: linear-gradient(135deg, #ff53a140 20%, #ff53a180);
-    box-shadow: inset 0 0 25px 9px #ff53a180;
+    @include depthBackground($rose);
 }
 
 .five-bottom {
-    background: linear-gradient(135deg, #00997540 20%, #00997580);
-    box-shadow: inset 0 0 25px 9px #00997580;
+    @include depthBackground($blue);
 
 }
 
 .six-bottom {
-    background: linear-gradient(135deg, #53a1ff40 20%, #53a1ff80);
-    box-shadow: inset 0 0 25px 9px #53a1ff80;
-
+   @include depthBackground($green);
 }
 
 h1 {
     font-size: 40px;
     letter-spacing: -2px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background: linear-gradient( #009975a0 , #009975);
+    background: linear-gradient( rgba($green, .5) , $green);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     margin: 0;
@@ -327,10 +332,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    // background: linear-gradient(135deg, #00997540 20%, #00997580);
-    // box-shadow: inset 0 0 25px 9px #00997580;
-    // background: linear-gradient(135deg, #ff736d40, #ff736d80);
-    // box-shadow: inset 0 0 25px 9px #ff736d80;
     border-top: 1px solid;
 }
 

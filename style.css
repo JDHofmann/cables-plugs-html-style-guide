@@ -81,41 +81,35 @@ header {
 }
 
 .three-bottom {
-  background: linear-gradient(135deg, #FFB15360 20%, #FFB153a0);
-  -webkit-box-shadow: inset 0 0 25px 9px #FFB15350;
-          box-shadow: inset 0 0 25px 9px #FFB15350;
-  background: linear-gradient(135deg, #ff9a2040 20%, #ff9a2080);
-  -webkit-box-shadow: inset 0 0 25px 9px #ff9a2030;
-          box-shadow: inset 0 0 25px 9px #ff9a2030;
-  background: linear-gradient(135deg, #ff8e0640 20%, #ff8e0680);
-  -webkit-box-shadow: inset 0 0 25px 9px #ff8e0680;
-          box-shadow: inset 0 0 25px 9px #ff8e0680;
+  background: linear-gradient(135deg, rgba(255, 177, 83, 0.25) 20%, rgba(255, 177, 83, 0.5));
+  -webkit-box-shadow: inset 0 0 25px 9px rgba(255, 177, 83, 0.5);
+          box-shadow: inset 0 0 25px 9px rgba(255, 177, 83, 0.5);
 }
 
 .four-bottom {
-  background: linear-gradient(135deg, #ff53a140 20%, #ff53a180);
-  -webkit-box-shadow: inset 0 0 25px 9px #ff53a180;
-          box-shadow: inset 0 0 25px 9px #ff53a180;
+  background: linear-gradient(135deg, rgba(255, 83, 161, 0.25) 20%, rgba(255, 83, 161, 0.5));
+  -webkit-box-shadow: inset 0 0 25px 9px rgba(255, 83, 161, 0.5);
+          box-shadow: inset 0 0 25px 9px rgba(255, 83, 161, 0.5);
 }
 
 .five-bottom {
-  background: linear-gradient(135deg, #00997540 20%, #00997580);
-  -webkit-box-shadow: inset 0 0 25px 9px #00997580;
-          box-shadow: inset 0 0 25px 9px #00997580;
+  background: linear-gradient(135deg, rgba(83, 161, 255, 0.25) 20%, rgba(83, 161, 255, 0.5));
+  -webkit-box-shadow: inset 0 0 25px 9px rgba(83, 161, 255, 0.5);
+          box-shadow: inset 0 0 25px 9px rgba(83, 161, 255, 0.5);
 }
 
 .six-bottom {
-  background: linear-gradient(135deg, #53a1ff40 20%, #53a1ff80);
-  -webkit-box-shadow: inset 0 0 25px 9px #53a1ff80;
-          box-shadow: inset 0 0 25px 9px #53a1ff80;
+  background: linear-gradient(135deg, rgba(0, 153, 117, 0.25) 20%, rgba(0, 153, 117, 0.5));
+  -webkit-box-shadow: inset 0 0 25px 9px rgba(0, 153, 117, 0.5);
+          box-shadow: inset 0 0 25px 9px rgba(0, 153, 117, 0.5);
 }
 
 h1 {
   font-size: 40px;
   letter-spacing: -2px;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  background: -webkit-gradient(linear, left top, left bottom, from(#009975a0), to(#009975));
-  background: linear-gradient(#009975a0, #009975);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 153, 117, 0.5)), to(#009975));
+  background: linear-gradient(rgba(0, 153, 117, 0.5), #009975);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 0;
