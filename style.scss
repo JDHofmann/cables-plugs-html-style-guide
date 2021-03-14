@@ -2,24 +2,22 @@
 /* COLORS */
 /* light-gray: #dfdfdf */
 /* dark: #4d4d4d */
-$light-1: #FFF4F3;
+$light-1: #FFF5F4;
 $dark: #4d4d4d; 
 $green: #009975;
-// $gold: #ffb153;
-$gold: #ff9a20;
-// $gold: #ff8e06;
-// $blue: #53a1ff;
-$orange: #ff6220;
-$rose: #ff53a1;
-$turq: #00d373;
-/* primary: #009975 */
-/* secondary: #ff5b53 */
-/* tertiary: #007199 */
-/* #FFB153 -gold */
+
+// original peach: #FFF4F3;
+$peach: #ffbab1;
+
+$mud: #cfc6b4;
+
+$mint-0: #A3D7B1;
+$mint-1: #9bd3ac;
+$mint-2: #68b890;
+
 
 @mixin depthBackground($base){
-    background: linear-gradient(135deg, rgba($base, .25) 20%, rgba($base, .5));
-    box-shadow: inset 0 0 25px 9px rgba($base, .5);
+    background: linear-gradient(135deg, rgba($base, .3) 20%, rgba($base, .6));
 }
 * {
     color: $dark;
@@ -82,20 +80,8 @@ header {
     }
 }
 
-.three-bottom {
-    @include depthBackground($green);
-}
-
-.four-bottom {
-    @include depthBackground($turq);
-}
-
-.five-bottom {
-    @include depthBackground($green);
-}
-
-.six-bottom {
-   @include depthBackground($turq);
+.bottom {
+    @include depthBackground($peach);
 }
 
 h1 {
@@ -117,17 +103,8 @@ h1 {
     overflow-y: hidden;
     box-shadow: 4px 4px 5px #4d4d4d60;
     border-radius: 10px;
-    .link:nth-child(1) p {
-        @include depthBackground($rose);
-    }
-    .link:nth-child(2) p {
-        @include depthBackground($turq);
-    }
-    .link:nth-child(3) p {
-        @include depthBackground($gold);
-    }
-    .link:nth-child(4) p {
-        @include depthBackground($orange);
+    .link p {
+        @include depthBackground($mint-1);
     }
 }
 
