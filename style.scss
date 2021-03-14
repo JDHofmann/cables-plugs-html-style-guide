@@ -2,6 +2,7 @@
 /* COLORS */
 /* light-gray: #dfdfdf */
 /* dark: #4d4d4d */
+$light-1: #FFF4F3;
 $dark: #4d4d4d; 
 $green: #009975;
 // $gold: #ffb153;
@@ -29,6 +30,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    background: $light-1;
 }
 
 header {
@@ -81,7 +83,7 @@ header {
 }
 
 .three-bottom {
-    @include depthBackground($rose);
+    @include depthBackground($green);
 }
 
 .four-bottom {
@@ -89,11 +91,11 @@ header {
 }
 
 .five-bottom {
-    @include depthBackground($gold);
+    @include depthBackground($green);
 }
 
 .six-bottom {
-   @include depthBackground($green);
+   @include depthBackground($turq);
 }
 
 h1 {
@@ -136,6 +138,8 @@ h1 {
     opacity: 0;
     transition: 1s;
     z-index: 100;
+    background: #ffffff;
+    border-radius: 10px;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -340,6 +344,7 @@ footer {
     justify-content: center;
     align-items: center;
     border-top: 1px solid;
+    background: #ffffff;
 }
 
 footer span {
