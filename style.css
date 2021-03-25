@@ -12,7 +12,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background: #FFF5F4;
+  background: #f0f0f0;
 }
 
 header {
@@ -67,7 +67,6 @@ header {
 }
 
 .bottom h2 {
-  color: #4d4d4d;
   font-weight: 400;
   font-size: 28px;
   letter-spacing: 2px;
@@ -79,14 +78,14 @@ header {
 }
 
 .bottom {
-  background: linear-gradient(135deg, rgba(255, 186, 177, 0.3) 20%, rgba(255, 186, 177, 0.6));
+  background: linear-gradient(135deg, rgba(208, 128, 208, 0.8) 20%, rgba(208, 128, 208, 0.99));
 }
 
 h1 {
   font-size: 40px;
   letter-spacing: -2px;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  background: #009975;
+  background: #006060;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 0;
@@ -104,7 +103,8 @@ h1 {
 }
 
 .scrolling-links-container .link p {
-  background: linear-gradient(135deg, rgba(155, 211, 172, 0.3) 20%, rgba(155, 211, 172, 0.6));
+  background: linear-gradient(135deg, rgba(0, 96, 96, 0.8) 20%, rgba(0, 96, 96, 0.99));
+  color: #ffffff;
 }
 
 .link {
@@ -271,7 +271,7 @@ header {
   display: block;
   width: 35px;
   height: 4px;
-  background: #009975;
+  background: #006060;
   border-radius: 2px;
   position: absolute;
   -webkit-transition: .65s;
@@ -387,7 +387,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: linear-gradient(135deg, rgba(155, 211, 172, 0.3) 20%, rgba(155, 211, 172, 0.6));
+  background: linear-gradient(135deg, rgba(0, 128, 128, 0.8) 20%, rgba(0, 128, 128, 0.99));
 }
 
 footer span {
